@@ -73,6 +73,7 @@ int find_builtin(info_t *info)
 			info->line_count++;
 			built_in_ret = builtintbl[i].func(info);
 			break;
+
 		}
 	return (built_in_ret);
 }
@@ -146,7 +147,7 @@ void fork_cmd(info_t *info)
 			exit(1);
 		}
 		/* TODO: PUT ERROR FUNCTION */
-	}
+		}
 	else
 	{
 		wait(&(info->status));

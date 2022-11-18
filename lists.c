@@ -152,7 +152,7 @@ void free_list(list_t **head_ptr)
 	{
 		next_node = node->next;
 		free(node->str);
-		free(node);
+			free(node);
 		node = next_node;
 	}
 	*head_ptr = NULL;
